@@ -1,0 +1,154 @@
+a {
+    text-decoration: none;
+}
+
+
+.post-margin {
+    margin: 10px;
+    /* border: 1px solid; */
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+#main-content {
+    width: 98%;
+    background-color: white;
+}
+
+/* HEADER STYLING */
+
+header {
+    background-color: white;
+    margin: 0 auto;
+    width: 98%;
+}
+
+.heading {
+    background-color: rgb(255, 17, 0);
+    min-height: 100px;
+}
+/* 
+.heading h1 {
+    font-size: 50px;
+} */
+
+#nav-1 a {
+    color: black;
+}
+
+
+#nav-2, #nav-1 {
+    font-weight: 600;   
+}
+
+#nav-2 a:first-child {
+    color: black;
+}
+
+#nav-2 a {
+    text-transform:uppercase;
+    color: grey;
+}
+
+/* .trapezoid {
+    background-color: blue;
+    border-bottom: 100px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 100px;
+} */
+
+/* ------------------------------------------- */
+
+
+
+.content-padding {
+    padding: 1rem 0 1rem 0;
+}
+
+.content-margin {
+    margin: 5px 0 5px 0;
+
+}
+
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.nopad {
+    padding: 0 !important;
+}
+
+.main-margin {
+    margin: 1rem;
+}
+
+
+
+/* #the-debate p {
+    border: 1px solid pink;
+}
+
+#the-debate img {
+    border: 1px solid green;
+}
+
+.border {
+    border: 2px red dashed;
+} */
+/* 
+.img-static {
+    height: auto;
+    width: 100%;
+} */
+/* 
+#opinion img,
+#opinion p {
+    border: 1px solid;
+} */
+/* 
+.fit-content {
+    width: fit-content;
+} */
+
+#opinion img,
+#the-debate img{
+    /* border: 1px red solid; */
+    max-width: 90px;
+    max-height: 90px;
+}
+
+/* .list-group{
+    margin: 1px blue solid ;
+}
+
+ul {
+    border: 1px blue solid;
+} */
+
+#opinion li {
+    border-top: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+}
+
+#more-stories li {
+    /* border-bottom: 0 none; */
+    border-left: 0 none;
+    border-right: 0 none;
+}
+
+
+#more-stories,
+#latest-news {
+    font-size: 14px;
+}
+
+#more-stories img,
+#latest-news img {
+    margin-right: 1rem;
+}
