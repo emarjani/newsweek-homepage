@@ -1,3 +1,7 @@
+:root {
+    --content-width: 97%;
+}
+
 a {text-decoration: none;}
 
 * {font-family: Helvetica, Arial, sans-serif;}
@@ -6,35 +10,65 @@ a {text-decoration: none;}
 
 body {background-color: rgb(240, 240, 240);}
 
-#main-content {
-    width: 97%;
+
+#main-content, #box-2{
+    margin: 0 auto;
+    width: var(--content-width);
     background-color: white;
 }
+
 
 .subheader-text {
     font-size: 14px;
     color: rgb(43, 43, 43);
 }
 
+.nw-font {
+    font-family: "Arvo", sans-serif;
+}
+
+/* wpkopq13313t13t */
+
+#in-the-magazine, #featured-stories, #box-2{
+    border: 1px red solid;
+}
+
 /* HEADER STYLING */
 
 header {
+    border: 1px solid purple;
     background-color: white;
     margin: 0 auto;
-    width: 97%;
+    width: var(--content-width);
+}
+
+header h1 {
+    line-height: 65px;
+    font-size: 80px;
+    border: 1px solid;
+}
+
+.heading-container {
+    position: relative;
+    background-color: rgb(255, 17, 0);
+    min-height: 120px;
 }
 
 .heading {
-    background-color: rgb(255, 17, 0);
-    min-height: 100px;
+    position: absolute;
+    top: 20px;
+    border: 2px solid black;
+    width:90%;
+    color: white;
 }
 
+header .buttons {
+    min-width: 200px;
+    border: 1px white solid;
+}
+
+#nav-2 a:first-child,
 #nav-1 a {
-    color: black;
-}
-
-
-#nav-2 a:first-child {
     color: black;
 }
 
@@ -57,9 +91,15 @@ header {
 
 .noborder {border: none;}
 
+/* .main-padding {padding: 1rem 2rem 1rem 2rem}; */
+
 .main-margin {margin: 0 1rem 0 1rem;}
 
 .img-margin {margin-right: 0.8rem;}
+
+
+/* MOST IMPORTANT, PADDING FOR MAIN ELEMENT SMAKES EVERYTHING ALIGNED */
+.base-pad {padding: 0 1.8rem 0 1.8rem};
 
 
 .border-top {
@@ -80,7 +120,6 @@ header {
     /* border: 1px red solid; */
     position: relative;
 }
-
 
 #vs-icon {
     border-radius: 50%;
@@ -103,12 +142,9 @@ header {
 
 #opinion img,
 #the-debate img{
-    /* border: 1px red solid; */
     max-width: 90px;
     max-height: 80px;
 }
-
-
 
 #more-stories,
 #latest-news {
@@ -122,18 +158,28 @@ footer .links {
 }
 
 #copyright {
-    max-height: fit-content;
     font-size: 12px;
-    border: 1px solid red;
 }
 
+/* base pad shouldnt be 1.8rem at 2 col layout */
+
+@media only screen and (max-width: 992px) {
+    .base-pad {padding: 0 1rem 0 1rem;}
+
+    :root {
+        --content-width: 100%;
+    }
+
+    #nav-1, #nav-2 {
+        display: none;
+        visibility: hidden;
+    }
+    /* add padding to mid column */
+    #content-group-1 {padding: 0 1rem 0 1rem !important;}
+}
 
 @media only screen and (max-width: 768px) {
-    .side-img {
-        min-width: 230px;
-    }
+    .side-img {min-width: 230px;}
 }
-/* 
-#the-debate li {
-    border-top-width: 4px;
-} */
+
+
