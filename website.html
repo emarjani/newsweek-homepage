@@ -9,41 +9,43 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link href="custom.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@400&display=swap" rel="stylesheet">
         <title>Newsweek</title>
     </head>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-        <header class="">
+        <header>
             <section class="heading-container base-pad">
                 <div class="heading d-flex justify-content-between align-items-end">
-                    <p class="nomargin">Wed, Mar 10, 2021</p>
+                    <p id="homepage-date" class="nomargin header-font">Wed, Mar 10, 2021</p>
                     <h1 class="nw-font nomargin">Newsweek</h1>
                     <section class="buttons d-flex justify-content-between align-items-center">
-                        <p class="text-bold nomargin">LOGIN</p>
-                        <button class="btn btn-warning text-bold">SUBSCRIBE ></button>
+                        <p class="text-bold">LOGIN</p>
+                        <button class="text-bold">SUBSCRIBE ></button>
                     </section>
                 </div>
             </section>
 
-            <nav id="nav-1">
-                <div class="links">
-                    <a class="text-bold" href="">U.S</a>
-                    <a class="text-bold" href="">World</a>
-                    <a class="text-bold" href="">Business</a>
-                    <a class="text-bold" href="">Tech & Science</a>
-                    <a class="text-bold" href="">Culture</a>
-                    <a class="text-bold" href="">Newsgeek</a>
-                    <a class="text-bold" href="">Sports</a>
-                    <a class="text-bold" href="">Health</a>
-                    <a class="text-bold" href="">The Debate</a>
-                    <a class="text-bold" href="">Experts</a>
-                    <a class="text-bold" href="">Vantage</a>
+            <nav id="nav-1" class="position-relative">
+                <div class="trapezoid">
+                    <div class="links d-flex justify-content-between border-bottom">
+                        <a class="text-bold" href="">U.S</a>
+                        <a class="text-bold" href="">World</a>
+                        <a class="text-bold" href="">Business</a>
+                        <a class="text-bold" href="">Tech & Science</a>
+                        <a class="text-bold" href="">Culture</a>
+                        <a class="text-bold" href="">Newsgeek</a>
+                        <a class="text-bold" href="">Sports</a>
+                        <a class="text-bold" href="">Health</a>
+                        <a class="text-bold" href="">The Debate</a>
+                        <a class="text-bold" href="">Experts</a>
+                        <a class="text-bold" href="">Vantage</a>
+                    </div>
                 </div>
             </nav>
-            <nav id="nav-2" class="base-pad">
+            <nav id="nav-2" class="base-pad border-bottom">
                 <a class="text-bold" href="">Trending</a>
                 <a class="text-bold" href="">Joe Biden</a>
                 <a class="text-bold" href="">Donald Trump</a>
@@ -57,25 +59,25 @@
 
         <section id="main-content" class="container-fluid">
             <div class="row">
-                <section id="featured-stories" class="col-lg col-md-6 base-pad">
+                <section id="featured-stories" class="col-lg col-md-6 base-pad sticky-top">
                     <div class="content-padding">
                         <h6 class="text-muted text-bold">FEATURED STORIES</h6>
-                        <img src="imgs/featured_story.PNG" class="w-100">
+                        <img src="imgs/featured_story.PNG" class="w-100 margin-bot">
                         <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h5>
                         <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
                     </div>
                     <div class="content-padding">
-                        <img src="imgs/featured_story.PNG" class="w-100">
+                        <img src="imgs/featured_story.PNG" class="w-100 margin-bot">
                         <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h5>
                         <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
                     </div>
                     <div class="content-padding">
-                        <img src="imgs/featured_story.PNG" class="w-100">
+                        <img src="imgs/featured_story.PNG" class="w-100 margin-bot">
                         <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h5>
                         <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
                     </div>
                     <div class="content-padding">
-                        <img src="imgs/featured_story.PNG" class="w-100">
+                        <img src="imgs/featured_story.PNG" class="w-100 margin-bot">
                         <h5 class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h5>
                         <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
                     </div>
@@ -84,26 +86,26 @@
                 <section id="content-group-1" class="col-lg-5 col-md-6 nopad">
                     <section id="top-story" class= "content-padding">
                         <h6 class="text-muted text-bold">TOP STORY</h6>
-                        <img src="imgs/top_story.PNG" class="w-100">
+                        <img src="imgs/top_story.PNG" class="w-100 margin-bot">
                         <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h5>
                         <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                     </section>
                     
                     <section id="my-turn" class="">
                         <h6 class="text-muted text-bold">MY TURN</h6>
-                        <div class="container-fluid nopad" id="ex">
+                        <div class="container-fluid nopad">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img class="img-fluid" src="imgs/my_turn.PNG">
-                                    <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
+                                    <img class="img-fluid margin-bot" src="imgs/my_turn.PNG">
+                                    <h6 class="text-muted text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
                                 </div>
                                 <div class="col-md-4">
-                                    <img class="img-fluid" src="imgs/my_turn.PNG">
-                                    <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
+                                    <img class="img-fluid margin-bot" src="imgs/my_turn.PNG">
+                                    <h6 class="text-muted text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
                                 </div>
                                 <div class="col-md-4">
-                                    <img  class="img-fluid" src="imgs/my_turn.PNG">
-                                    <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
+                                    <img  class="img-fluid margin-bot" src="imgs/my_turn.PNG">
+                                    <h6 class="text-muted text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
                                 </div>
                             </div>
                         </div>
@@ -112,36 +114,49 @@
 
                     <section id="culture-travel" class="content-padding">
                         <h6 class="text-muted text-bold">CULTURE & TRAVEL</h6>
-                        <div class="container-fluid nopad" id="ex">
+                        <div class="container-fluid nopad">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img class="img-fluid" src="imgs/my_turn.PNG">
-                                    <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
+                                    <img class="img-fluid margin-bot" src="imgs/my_turn.PNG">
+                                    <h6 class="text-muted text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
                                 </div>
                                 <div class="col-md-4">
-                                    <img class="img-fluid" src="imgs/my_turn.PNG">
-                                    <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
+                                    <img class="img-fluid margin-bot" src="imgs/my_turn.PNG">
+                                    <h6 class="text-muted text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
                                 </div>
                                 <div class="col-md-4">
-                                    <img  class="img-fluid" src="imgs/my_turn.PNG">
-                                    <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
+                                    <img  class="img-fluid margin-bot" src="imgs/my_turn.PNG">
+                                    <h6 class="text-muted text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h6>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <!-- <p class="font-italic"> Exasdmqp etd</p> -->
 
                     <section id="more-stories">
                         <h6 class="text-muted text-bold">MORE STORIES</h6>
                         <ul class="list-group">
-                            <li class="list-group-item d-flex content-padding border-top">
+                            <li class="list-group-item d-flex content-padding noborder border-top">
                                 <img class="img-margin" src="imgs/more.PNG">
                                 <div class="d-flex flex-column">
                                     <p class="nomargin text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
                                     <p class="nomargin subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
                                 </div>
                             </li>
-                            <li class="list-group-item d-flex content-padding border-top">
+                            <li class="list-group-item d-flex content-padding noborder border-top">
+                                <img class="img-margin" src="imgs/more.PNG">
+                                <div class="d-flex flex-column">
+                                    <p class="nomargin text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                                    <p class="nomargin subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex content-padding noborder border-top">
+                                <img class="img-margin" src="imgs/more.PNG">
+                                <div class="d-flex flex-column">
+                                    <p class="nomargin text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                                    <p class="nomargin subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex content-padding noborder border-top">
                                 <img class="img-margin" src="imgs/more.PNG">
                                 <div class="d-flex flex-column">
                                     <p class="nomargin text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
@@ -155,7 +170,7 @@
                     <section id="latest-news">
                         <h6 class="text-muted text-bold">LATEST NEWS</h6>
                         <ul class="list-group">
-                            <li class="list-group-item d-flex content-padding border-top">
+                            <li class="list-group-item d-flex content-padding noborder border-top">
                                 <img class="img-margin" src="imgs/more.PNG">
                                 <div class="d-flex flex-column">
                                     <p class="nomargin text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
@@ -166,17 +181,17 @@
                     </section>
                 </section>
 
-                <section id="content-group-2" class="col-lg col-md-12 base-pad">
+                <section id="content-group-2" class="col-lg col-md-12 base-pad sticky-top">
                     <section id="the-debate" class="content-padding">
                         <h6 class="text-muted text-bold">THE DEBATE</h6>
                         <ul class="list-group">
-                            <li class="list-group-item d-flex nopad border-top">
-                                <img class="img-margin" src="imgs/icon.PNG">
-                                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <li class="list-group-item d-flex nopad noborder border-top">
+                                <img class="img-margin margin-top" src="imgs/icon.PNG">
+                                <p class="margin-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
                             </li>
-                            <div id="vs-container">
+                            <div id="vs-container" class="position-relative">
                                 <hr>
-                                <div id="vs-icon"><p>VS</p></div>
+                                <div id="vs-icon" class="text-bold rounded-circle"><p>VS</p></div>
                             </div>
                             <li class="list-group-item d-flex flex-row-reverse nopad border-bottom">
                                 <img class="" src="imgs/icon.PNG">
@@ -260,43 +275,43 @@
         </section>
 
         <section id="box-2" class="base-pad">
-            <section id="in-the-magazine">
+            <section id="in-the-magazine" class="section-padding">
                 <h5 class="text-center text-bold">IN THE MAGAZINE</h5>
                 <hr>
                 <div class="container-fluid nopad">
                     <div class="row">
                         <div class="col-md-3">
-                            <img class="w-100" src="imgs/inthemagazine.PNG">
+                            <img class="w-100 margin-bot" src="imgs/inthemagazine.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                         </div>
                         <div class="col-md-3">
-                            <img class="w-100" src="imgs/inthemagazine.PNG">
+                            <img class="w-100 margin-bot" src="imgs/inthemagazine.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                         </div>
                         <div class="col-md-3">
-                            <img class="w-100" src="imgs/inthemagazine.PNG">
+                            <img class="w-100 margin-bot" src="imgs/inthemagazine.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                         </div>
                         <div class="col-md-3">
-                            <img class="w-100" src="imgs/inthemagazine.PNG">
+                            <img class="w-100 margin-bot" src="imgs/inthemagazine.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3">
-                            <img class="w-100" src="imgs/inthemagazine.PNG">
+                            <img class="w-100 margin-bot" src="imgs/inthemagazine.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                         </div>
                         <div class="col-md-3">
-                            <img class="w-100" src="imgs/inthemagazine.PNG">
+                            <img class="w-100 margin-bot" src="imgs/inthemagazine.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                         </div>
                         <div class="col-md-3">
-                            <img class="w-100" src="imgs/inthemagazine.PNG">
+                            <img class="w-100 margin-bot" src="imgs/inthemagazine.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                         </div>
                         <div class="col-md-3">
-                            <img class="w-100" src="imgs/inthemagazine.PNG">
+                            <img class="w-100 margin-bot" src="imgs/inthemagazine.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                         </div>
                     </div>
@@ -304,50 +319,50 @@
                 
             </section>
 
-            <section id="editors-pick">
+            <section id="editors-pick" class="section-padding">
                 <h5 class="text-center text-bold">EDITOR'S PICK</h5>
                 <hr>
                 <div class="container-fluid nopad">
                     <div class="row">
                         <div class="col-md-6 col-lg-3">
-                            <img class="w-100" src="imgs/editorspick.PNG">
+                            <img class="w-100 margin-bot" src="imgs/editorspick.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                             <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <img class="w-100" src="imgs/editorspick.PNG">
+                            <img class="w-100 margin-bot" src="imgs/editorspick.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                             <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <img class="w-100" src="imgs/editorspick.PNG">
+                            <img class="w-100 margin-bot" src="imgs/editorspick.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                             <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <img class="w-100" src="imgs/editorspick.PNG">
+                            <img class="w-100 margin-bot" src="imgs/editorspick.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                             <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-lg-3">
-                            <img class="w-100" src="imgs/editorspick.PNG">
+                            <img class="w-100 margin-bot" src="imgs/editorspick.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                             <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <img class="w-100" src="imgs/editorspick.PNG">
+                            <img class="w-100 margin-bot" src="imgs/editorspick.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                             <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <img class="w-100" src="imgs/editorspick.PNG">
+                            <img class="w-100 margin-bot" src="imgs/editorspick.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                             <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <img class="w-100" src="imgs/editorspick.PNG">
+                            <img class="w-100 margin-bot" src="imgs/editorspick.PNG">
                             <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                             <p class="subheader-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
                         </div>
@@ -358,29 +373,29 @@
             <hr>
     
             <section id="US">
-                <h5 class="text-bold main-margin">U.S</h5>
+                <h5 class="text-bold">U.S</h5>
                 <div class="">
                     <div class="container-fluid nopad">
                         <div class="row content-padding">
                             <div class="col-md-4">
-                                <img class="w-100" src="imgs/tech.PNG">
+                                <img class="w-100 margin-bot" src="imgs/tech.PNG">
                                 <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                             </div>
                             <div class="col-md-4">
-                                <img class="w-100" src="imgs/tech.PNG">
+                                <img class="w-100 margin-bot" src="imgs/tech.PNG">
                                 <h5 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                             </div>
                             <div class="col-md-4">
                                 <ul class="list-group">
-                                    <li class="list-group-item d-flex nopad noborder">
+                                    <li class="list-group-item d-flex nopad noborder margin-bot">
                                         <img class="side-img img-margin" src="imgs/sideimg.PNG">
                                         <h6 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
                                     </li>
-                                    <li class="list-group-item d-flex content-padding border-top">
+                                    <li class="list-group-item d-flex content-padding noborder border-top">
                                         <img class="side-img img-margin" src="imgs/sideimg.PNG">
                                         <h6 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
                                     </li>
-                                    <li class="list-group-item d-flex content-padding border-top">
+                                    <li class="list-group-item d-flex content-padding noborder border-top">
                                         <img class="side-img img-margin" src="imgs/sideimg.PNG">
                                         <h6 class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
                                     </li>
@@ -390,14 +405,8 @@
                     </div>
                 </div>
             </section>
-
-            <article id="subscribe">
-            </article>
     
-            <article id="newsletter">
-            </article>
-    
-            <footer class="main-margin nomargin">
+            <footer class="nomargin section-padding">
                 <section class="header d-flex justify-content-between align-items-end">
                     <div class="d-flex align-items-end">
                         <h2 class="nw-font">Newsweek</h2>
@@ -406,11 +415,9 @@
                     <img src="imgs/social-icons.PNG">                
                 </section>
                 <hr class="nomargin">
-    
-                <section class="editions">
+                <section class="editions margin-top">
                     <p>Editions: U.S. Edition | 日本 | Pakistan | Polska | Romania </p> 
                 </section>
-    
                 <section class="links">
                     <p>About us | Corrections | Contact Us | Editorial Guidelines | Advertise | Copywright | Terms & Conditions |
                         Privacy Policy | Cookie Policy | Terms of Sale | Archive | Announcements</p>

@@ -2,13 +2,17 @@
     --content-width: 97%;
 }
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+    color: black;
+}
 
 * {font-family: Helvetica, Arial, sans-serif;}
 
 .text-bold {font-weight: bold;}
+.text-muted {color: rgb(128, 127, 127) !important}
 
-body {background-color: rgb(240, 240, 240);}
+body {background-color: rgb(245, 245, 245);}
 
 
 #main-content, #box-2{
@@ -17,7 +21,6 @@ body {background-color: rgb(240, 240, 240);}
     background-color: white;
 }
 
-
 .subheader-text {
     font-size: 14px;
     color: rgb(43, 43, 43);
@@ -25,88 +28,44 @@ body {background-color: rgb(240, 240, 240);}
 
 .nw-font {
     font-family: "Arvo", sans-serif;
+    letter-spacing: -0.07em;
 }
 
-/* wpkopq13313t13t */
+.header-font {font-family: 'Open Sans Condensed', sans-serif;}
 
-#in-the-magazine, #featured-stories, #box-2{
-    border: 1px red solid;
+#featured-stories, #content-group-1, #content-group-2 {
+    margin-top: 0.7rem;
 }
-
-/* HEADER STYLING */
-
-header {
-    border: 1px solid purple;
-    background-color: white;
-    margin: 0 auto;
-    width: var(--content-width);
-}
-
-header h1 {
-    line-height: 65px;
-    font-size: 80px;
-    border: 1px solid;
-}
-
-.heading-container {
-    position: relative;
-    background-color: rgb(255, 17, 0);
-    min-height: 120px;
-}
-
-.heading {
-    position: absolute;
-    top: 20px;
-    border: 2px solid black;
-    width:90%;
-    color: white;
-}
-
-header .buttons {
-    min-width: 200px;
-    border: 1px white solid;
-}
-
-#nav-2 a:first-child,
-#nav-1 a {
-    color: black;
-}
-
-#nav-2 a {
-    text-transform:uppercase;
-    color: grey;
-}
-
-/* ------------------------------------------- */
 
 /* PADDINGS AND MARGINS AND BORDERS */
 
-.content-padding {
-    padding: 0.7rem 0 0.7rem 0;
-}
-
-.nomargin {margin: 0 !important;}
-
-.nopad {padding: 0 !important;}
-
-.noborder {border: none;}
-
-/* .main-padding {padding: 1rem 2rem 1rem 2rem}; */
-
-.main-margin {margin: 0 1rem 0 1rem;}
-
-.img-margin {margin-right: 0.8rem;}
-
-
 /* MOST IMPORTANT, PADDING FOR MAIN ELEMENT SMAKES EVERYTHING ALIGNED */
 .base-pad {padding: 0 1.8rem 0 1.8rem};
+/* *************************************** */
 
 
-.border-top {
-    border-bottom: 0 none;
-    border-left: 0 none;
-    border-right: 0 none;
-}
+
+.nomargin {margin: 0 !important;}
+.nopad {padding: 0 !important;}
+.noborder {border: none;}
+
+.content-padding {padding: 0.7rem 0 0.7rem 0;}
+
+/* might delete mian margin */
+.main-margin {margin: 0 1rem 0 1rem;}
+.img-margin {margin-right: 0.8rem;}
+.section-padding{padding-top: 2rem;}
+
+.margin-bot {margin-bottom: 0.7rem;}
+.margin-top {margin-top: 0.7rem;}
+
+
+/* #more-stories li {
+    border: 1px purple solid;
+} */
+
+/* for some reason, border-top could nto be written and function like border-bottom. border-top must be used with noborder for the desired effect */
+.border-top {border-top: 1px rgb(197, 197, 197) solid;}
 
 .border-bottom {
     border-top: 0 none;
@@ -114,26 +73,119 @@ header .buttons {
     border-right: 0 none;
 }
 
-/* #VS CIRCLE */
 
-#vs-container {
-    /* border: 1px red solid; */
-    position: relative;
+
+/* STICKY SIDEBARS */
+
+#content-group-2, #featured-stories {
+    align-self: start;
 }
 
+/* HEADER STYLING */
+
+header {
+    background-color: white;
+    margin: 0 auto;
+    width: var(--content-width);
+}
+
+header h1 {
+    line-height: 45px;
+    font-size: 80px;
+    /* border: 1px solid white; */
+    padding: 10px 30px 0 90px;
+}
+
+#homepage-date {letter-spacing: -1px;}
+
+.heading-container {
+    position: relative;
+    background-color: rgb(255, 17, 0);
+    min-height: 110px;
+}
+
+.heading {
+    position: absolute;
+    top: 20px;
+    width: calc(100% - 2*(1.8rem));
+    color: white;
+}
+
+header .buttons {
+    min-width: 200px;
+    border: 1px solid white;
+}
+
+.buttons p {
+    border: 1px white solid;
+}
+
+.buttons button {
+    border: 1px white solid;
+}
+
+
+header button {
+    border-radius: 20px !important;
+    padding: 3px;
+    border: none;
+    min-width: 130px;
+    background-color: rgb(255, 217, 0);
+}
+
+/* NAVIGATION */
+
+#nav-1 .links {
+    background-color:white;
+    padding: 0.6em 0.6em 0.6em 1.2em;
+}
+
+.trapezoid {
+    position: absolute;
+    top: -15px;
+	border-bottom: 45px solid white;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 98%;
+}
+
+#nav-2 a:first-child {color: black;}
+
+#nav-2 {
+    /* position: absolute; */
+    background-color: turquoise;
+    margin-top: 30px;
+    border: 1px solid blue;
+    padding: 0.6em 1.8rem 0.6em 1.8rem;
+}
+
+#nav-2 a {
+    text-transform:uppercase;
+    padding: 0 30px 0 0;
+    color: grey;
+}
+
+#nav-1 a:hover,
+#nav-2 a:hover {
+    color: red;
+}
+
+/* #VS CIRCLE */
+
 #vs-icon {
-    border-radius: 50%;
     position: absolute;
     top: 0px;
     left: 47%;
     height: 30px;
     width: 30px;
     background-color: black;
-    color: white;
+    
 }
 
 #vs-icon p {
     position: absolute;
+    color: white;
+    font-size: 15px;
     top:4px;
     left: 5px;
 }
@@ -141,10 +193,15 @@ header .buttons {
 -------------------- */
 
 #opinion img,
-#the-debate img{
-    max-width: 90px;
+#the-debate img {
     max-height: 80px;
 }
+
+#more-stories img,
+#latest-news img {
+    max-height: 100px;
+}
+
 
 #more-stories,
 #latest-news {
@@ -157,11 +214,16 @@ footer .links {
     font-size: 15px;
 }
 
-#copyright {
-    font-size: 12px;
+footer .nw-font {
+    font-size: 45px;
+    color: red;
 }
 
-/* base pad shouldnt be 1.8rem at 2 col layout */
+#copyright {
+    font-size: 12px;
+    padding-left: 1rem;
+}
+
 
 @media only screen and (max-width: 992px) {
     .base-pad {padding: 0 1rem 0 1rem;}
@@ -169,17 +231,36 @@ footer .links {
     :root {
         --content-width: 100%;
     }
+    .heading-container {min-height: 50px;}
 
-    #nav-1, #nav-2 {
+    .heading {
+        top: 0;
+        min-height: 43px;
+    }
+
+    .heading h1 {
+        line-height: 28px;
+        font-size: 28px;
+        padding: 0;
+    }
+
+    #homepage-date, #nav-1, #nav-2 {
         display: none;
         visibility: hidden;
     }
+
+    #content-group-2, #featured-stories {
+        position: static;
+    }
+
     /* add padding to mid column */
     #content-group-1 {padding: 0 1rem 0 1rem !important;}
 }
 
 @media only screen and (max-width: 768px) {
     .side-img {min-width: 230px;}
+
+    #my-turn img, #culture-travel img {
+        min-width: 100%;
+    }
 }
-
-
