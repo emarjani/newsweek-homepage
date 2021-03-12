@@ -42,25 +42,9 @@ body {background-color: rgb(245, 245, 245);}
 /* MOST IMPORTANT, PADDING FOR MAIN ELEMENT SMAKES EVERYTHING ALIGNED */
 .base-pad {padding: 0 1.8rem 0 1.8rem};
 /* *************************************** */
-
 .noborder {border: none;}
 
-.content-padding {padding: 0.7rem 0 0.7rem 0;}
-
-/* might delete mian margin */
-.main-margin {margin: 0 1rem 0 1rem;}
-.img-margin {margin-right: 0.8rem;}
-.section-padding{padding-top: 2rem;}
-
-.margin-top {margin-top: 0.7rem;}
-
-
-/* #more-stories li {
-    border: 1px purple solid;
-} */
-
 /* for some reason, border-top could nto be written and function like border-bottom. border-top must be used with noborder for the desired effect */
-
 .border-top {
     border-bottom: 0 none;
     border-left: 0 none;
@@ -72,6 +56,11 @@ body {background-color: rgb(245, 245, 245);}
     border-left: 0 none;
     border-right: 0 none;
 }
+
+.content-padding {padding: 0.7rem 0 0.7rem 0;}
+.img-margin {margin-right: 0.8rem;}
+.section-padding {padding-top: 2rem;}
+
 
 /* STICKY SIDEBARS */
 
@@ -90,7 +79,6 @@ header {
 header h1 {
     line-height: 45px;
     font-size: 80px;
-    /* border: 1px solid white; */
     padding: 10px 30px 0 90px;
 }
 
