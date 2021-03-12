@@ -43,10 +43,6 @@ body {background-color: rgb(245, 245, 245);}
 .base-pad {padding: 0 1.8rem 0 1.8rem};
 /* *************************************** */
 
-
-
-.nomargin {margin: 0 !important;}
-.nopad {padding: 0 !important;}
 .noborder {border: none;}
 
 .content-padding {padding: 0.7rem 0 0.7rem 0;}
@@ -56,7 +52,6 @@ body {background-color: rgb(245, 245, 245);}
 .img-margin {margin-right: 0.8rem;}
 .section-padding{padding-top: 2rem;}
 
-.margin-bot {margin-bottom: 0.7rem;}
 .margin-top {margin-top: 0.7rem;}
 
 
@@ -65,15 +60,18 @@ body {background-color: rgb(245, 245, 245);}
 } */
 
 /* for some reason, border-top could nto be written and function like border-bottom. border-top must be used with noborder for the desired effect */
-.border-top {border-top: 1px rgb(197, 197, 197) solid;}
+
+.border-top {
+    border-bottom: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+}
 
 .border-bottom {
     border-top: 0 none;
     border-left: 0 none;
     border-right: 0 none;
 }
-
-
 
 /* STICKY SIDEBARS */
 
@@ -113,17 +111,7 @@ header h1 {
 
 header .buttons {
     min-width: 200px;
-    border: 1px solid white;
 }
-
-.buttons p {
-    border: 1px white solid;
-}
-
-.buttons button {
-    border: 1px white solid;
-}
-
 
 header button {
     border-radius: 20px !important;
@@ -135,9 +123,10 @@ header button {
 
 /* NAVIGATION */
 
-#nav-1 .links {
-    background-color:white;
-    padding: 0.6em 0.6em 0.6em 1.2em;
+#nav-1 .links,
+#nav-2 {
+    background-color:rgb(255, 255, 255);
+    padding: 0.6em 1.6rem 0.6em 1.6rem;;
 }
 
 .trapezoid {
@@ -149,19 +138,14 @@ header button {
 	width: 98%;
 }
 
+/* because trapezoid height is set to 0 */
+#nav-1 {min-height: 2rem;}
+
 #nav-2 a:first-child {color: black;}
 
-#nav-2 {
-    /* position: absolute; */
-    background-color: turquoise;
-    margin-top: 30px;
-    border: 1px solid blue;
-    padding: 0.6em 1.8rem 0.6em 1.8rem;
-}
-
 #nav-2 a {
-    text-transform:uppercase;
-    padding: 0 30px 0 0;
+    text-transform: uppercase;
+    padding-right: 1%;
     color: grey;
 }
 
@@ -196,12 +180,10 @@ header button {
 #the-debate img {
     max-height: 80px;
 }
-
 #more-stories img,
 #latest-news img {
     max-height: 100px;
 }
-
 
 #more-stories,
 #latest-news {
