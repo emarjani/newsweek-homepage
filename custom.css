@@ -91,15 +91,13 @@ header h1 {
 }
 
 .heading {
+    width: 100%;
     position: absolute;
     top: 20px;
-    width: calc(100% - 2*(1.8rem));
     color: white;
 }
 
-header .buttons {
-    min-width: 200px;
-}
+header .buttons {min-width: 200px;}
 
 header button {
     border-radius: 20px !important;
@@ -163,6 +161,21 @@ header button {
 }
 /* 
 -------------------- */
+
+/* The debate */
+
+#the-debate p {
+    /* border: 1px blue solid; */
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+}
+
+#the-debate p:first-child {color: black;}
+
+#the-debate li {border-width: 4px !important;}
+
+
 
 #opinion img,
 #the-debate img {
