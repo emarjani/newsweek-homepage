@@ -1,6 +1,6 @@
 # Newsweek Homepage
 
-A front end clone of the Newsweek homepage. Built using Bootstrap, as well as basic HTML and CSS.
+A responsive front end clone of the Newsweek homepage. Built using Bootstrap, HTML and CSS.
 
 ## Links
 
